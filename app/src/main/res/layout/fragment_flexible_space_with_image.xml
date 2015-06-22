@@ -1,0 +1,109 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <!-- TODO calculate the minHeight in the fragment -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:minHeight="800dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            >
+            <ch.swissonid.design_lib_sample.widget.ListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="071 999 12 34"
+                app:leftIcon="@drawable/ic_phone"
+                />
+            <ch.swissonid.design_lib_sample.widget.ListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="044 777 12 34"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_margin="@dimen/divider_padding"
+                />
+            <ch.swissonid.design_lib_sample.widget.ListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="something@somewhere.com"
+                app:leftIcon="@drawable/ic_email"
+                />
+            <ch.swissonid.design_lib_sample.widget.ListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="else@elsewhere.com"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_margin="@dimen/divider_padding"
+                />
+
+            <ch.swissonid.design_lib_sample.widget.ListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="Zuerich..."
+                app:leftIcon="@drawable/ic_location"
+                />
+            <ch.swissonid.design_lib_sample.widget.ListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="New York..."
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@style/Title.Expanded"
+            app:collapsedTitleTextAppearance="@style/Title.collapsed"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/contact"
+                android:contentDescription="@string/contact_desc"
+                app:layout_collapseMode="parallax"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/gradient"
+
+                />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_flexible_space_with_image"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                >
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
+

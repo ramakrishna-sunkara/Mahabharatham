@@ -29,5 +29,12 @@
             android:icon="@drawable/ic_android"
             android:title="@string/flexible_space_menu_title"
             />
+
+        <item
+            android:id="@+id/syncdata_menu_item"
+            android:icon="@drawable/ic_android"
+            android:title="@string/syncdata_menu_title"
+            />
+
     </group>
 </menu>

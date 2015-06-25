@@ -167,6 +167,10 @@ public class DrawerActivity extends AppCompatActivity implements DrawerLayout.Dr
             case R.id.pinned_app_bar_menu_item:
                 setNewRootFragment(FlexibleSpaceFragment.newInstance());
                 break;
+
+            case R.id.syncdata_menu_item:
+                setNewRootFragment(FlexibleSpaceFragment.newInstance());
+                break;
         }
         mCurrentMenuItem = id;
         menuItem.setChecked(true);

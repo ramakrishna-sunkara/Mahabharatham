@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
+
         <item
             android:checked="true"
-            android:id="@+id/standard_app_bar_menu_item"
-            android:icon="@drawable/ic_android"
-            android:title="@string/standard_app_bar_menu_title"
+            android:id="@+id/parvam_menu_item"
+            android:icon="@drawable/ic_parvams_list"
+            android:title="@string/parvam_menu_title"
             />
         <item
-            android:id="@+id/tabs_menu_item"
-            android:icon="@drawable/ic_android"
-            android:title="@string/tabs_menu_title"
+            android:id="@+id/parechayam_menu_item"
+            android:icon="@drawable/ic_parechayam"
+            android:title="@string/parechayam_menu_title"
             />
         <item
-            android:id="@+id/parallax_menu_item"
-            android:icon="@drawable/ic_android"
-            android:title="@string/flexible_space_with_image_menu_title"
+            android:id="@+id/share_app_menu_item"
+            android:icon="@drawable/ic_share_app"
+            android:title="@string/share_app_menu_title"
             />
-
         <item
-            android:id="@+id/pinned_app_bar_menu_item"
-            android:icon="@drawable/ic_android"
-            android:title="@string/flexible_space_menu_title"
-            />
-
-        <item
-            android:id="@+id/pinned_menu_item"
-            android:icon="@drawable/ic_android"
-            android:title="@string/flexible_space_menu_title"
+            android:id="@+id/rate_app_menu_item"
+            android:icon="@drawable/ic_rate_app"
+            android:title="@string/rate_app_menu_title"
             />
 
         <item
-            android:id="@+id/syncdata_menu_item"
-            android:icon="@drawable/ic_android"
-            android:title="@string/syncdata_menu_title"
+            android:id="@+id/about_menu_item"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/about_menu_title"
+            />
+
+        <item
+            android:id="@+id/load_menu_item"
+            android:icon="@drawable/ic_load_chapters"
+            android:title="@string/load_menu_title"
             />
 
     </group>

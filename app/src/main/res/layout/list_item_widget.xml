@@ -21,7 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:textSize="20sp"
+        android:layout_toRightOf="@id/list_item_left_icon"
+        android:textSize="18sp"
         android:paddingLeft="@dimen/list_item_text_left_padding"
         tools:text="Location Name"
         />
